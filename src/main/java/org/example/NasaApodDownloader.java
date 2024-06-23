@@ -35,7 +35,6 @@ public class NasaApodDownloader {
                     ObjectMapper objectMapper = new ObjectMapper();
                     NasaApodResponse apodResponse = objectMapper.readValue(result, NasaApodResponse.class);
 
-                    // Download image
                     downloadImage(apodResponse.url);
                 }
             }
